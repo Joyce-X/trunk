@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMInputView">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SU1-gr-aDY">
+                    <rect key="frame" x="20" y="10" width="368" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="uHj-AT-QAE"/>
+                    </constraints>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJb-7e-ZL0">
+                    <rect key="frame" x="356" y="58" width="44" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="PQj-z8-Fgb"/>
+                        <constraint firstAttribute="height" constant="30" id="rtP-UI-xmf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="okClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="m4O-2S-QjA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss8-u6-Q7U">
+                    <rect key="frame" x="295" y="58" width="53" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2i4-NO-sCf"/>
+                        <constraint firstAttribute="width" constant="53" id="wv5-Dy-UdI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ob8-BN-P4I"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKx-Xo-WUt">
+                    <rect key="frame" x="353" y="40" width="30" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ks5-YZ-g8Y"/>
+                        <constraint firstAttribute="width" constant="30" id="leu-DE-dAn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUr-hy-hAT">
+                    <rect key="frame" x="0.0" y="65" width="295" height="25"/>
+                    <connections>
+                        <action selector="ClickBlank:" destination="iN0-l3-epB" eventType="touchUpInside" id="mtw-pE-Onz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GJb-7e-ZL0" secondAttribute="trailing" constant="8" id="7MT-yd-tru"/>
+                <constraint firstAttribute="bottom" secondItem="XUr-hy-hAT" secondAttribute="bottom" id="88V-lh-lpI"/>
+                <constraint firstItem="tKx-Xo-WUt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="FE7-Hv-0G2"/>
+                <constraint firstAttribute="trailing" secondItem="SU1-gr-aDY" secondAttribute="trailing" constant="20" id="HBZ-UT-Eql"/>
+                <constraint firstItem="XUr-hy-hAT" firstAttribute="top" secondItem="SU1-gr-aDY" secondAttribute="bottom" id="M6q-NB-vim"/>
+                <constraint firstItem="GJb-7e-ZL0" firstAttribute="leading" secondItem="ss8-u6-Q7U" secondAttribute="trailing" constant="8" id="Ui3-HB-q9w"/>
+                <constraint firstItem="SU1-gr-aDY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Wb6-To-WUk"/>
+                <constraint firstAttribute="bottom" secondItem="ss8-u6-Q7U" secondAttribute="bottom" constant="2" id="XYN-yh-g8z"/>
+                <constraint firstItem="XUr-hy-hAT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xlt-7L-d48"/>
+                <constraint firstItem="ss8-u6-Q7U" firstAttribute="leading" secondItem="XUr-hy-hAT" secondAttribute="trailing" id="ZqL-CU-vcb"/>
+                <constraint firstAttribute="trailing" secondItem="tKx-Xo-WUt" secondAttribute="trailing" constant="25" id="po8-iX-Pf5"/>
+                <constraint firstAttribute="bottom" secondItem="GJb-7e-ZL0" secondAttribute="bottom" constant="2" id="s0U-fR-6jN"/>
+                <constraint firstItem="SU1-gr-aDY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="wER-Mh-fVs"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="ss8-u6-Q7U" id="wQy-3A-if8"/>
+                <outlet property="leftLabel" destination="tKx-Xo-WUt" id="Pxo-Sm-lcS"/>
+                <outlet property="okBtn" destination="GJb-7e-ZL0" id="fO5-dK-UvT"/>
+                <outlet property="textView" destination="SU1-gr-aDY" id="cnr-nM-LV0"/>
+            </connections>
+            <point key="canvasLocation" x="-130" y="30"/>
+        </view>
+    </objects>
+</document>

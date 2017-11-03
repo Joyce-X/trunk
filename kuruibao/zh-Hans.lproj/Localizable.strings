@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  kuruibao
+
+  Created by x on 17/9/5.
+  Copyright © 2017年 ChexXiaoMi. All rights reserved.
+*/
+
+// 不用在中文 这里设置key value， 找不到value 的时候就会返回key作为value

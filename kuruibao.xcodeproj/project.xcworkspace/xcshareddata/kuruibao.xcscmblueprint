@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7fa312ab-0cff-4fdd-bc8f-e1dfe06f270f++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7fa312ab-0cff-4fdd-bc8f-e1dfe06f270f++505" : {
+
+    },
+    "293f1b3c-49e7-7143-b537-0c37a6abdd54++7157" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7fa312ab-0cff-4fdd-bc8f-e1dfe06f270f++505" : 9223372036854775807,
+    "293f1b3c-49e7-7143-b537-0c37a6abdd54++7157" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B72CD834-0925-4954-B3E1-A5DFAB0A73B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7fa312ab-0cff-4fdd-bc8f-e1dfe06f270f++505" : "kuruibao\/",
+    "293f1b3c-49e7-7143-b537-0c37a6abdd54++7157" : "kuruibao\/kuruibao\/3rd\/SDWebImage\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "kuruibao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "kuruibao.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.128\/svn\/LCSJ",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "293f1b3c-49e7-7143-b537-0c37a6abdd54++7157"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/kuruibao",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7fa312ab-0cff-4fdd-bc8f-e1dfe06f270f++505"
+    }
+  ]
+}

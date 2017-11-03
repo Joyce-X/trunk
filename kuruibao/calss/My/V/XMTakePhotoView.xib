@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMTakePhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJ3-6m-6jx" userLabel="View1">
+                    <rect key="frame" x="0.0" y="0.0" width="489" height="75.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="PQR-Y9-P49" userLabel="Image View1">
+                            <rect key="frame" x="0.0" y="74.5" width="489" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="iTZ-pX-Z3B"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Choose from Gallery  icon" translatesAutoresizingMaskIntoConstraints="NO" id="hv6-kR-dd0">
+                            <rect key="frame" x="13" y="31" width="17" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="c1E-WZ-FCt"/>
+                                <constraint firstAttribute="width" constant="17" id="v86-O5-PAd"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose from Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-RF-SnH">
+                            <rect key="frame" x="43" y="0.0" width="446" height="74.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="hv6-kR-dd0" firstAttribute="centerY" secondItem="IJ3-6m-6jx" secondAttribute="centerY" id="5Kq-cB-JWj"/>
+                        <constraint firstAttribute="bottom" secondItem="PQR-Y9-P49" secondAttribute="bottom" id="GUt-MQ-AHw"/>
+                        <constraint firstItem="KOo-RF-SnH" firstAttribute="leading" secondItem="hv6-kR-dd0" secondAttribute="trailing" constant="13" id="JkL-JB-Ie5"/>
+                        <constraint firstItem="PQR-Y9-P49" firstAttribute="top" secondItem="KOo-RF-SnH" secondAttribute="bottom" id="LBh-ic-lb7"/>
+                        <constraint firstItem="KOo-RF-SnH" firstAttribute="top" secondItem="IJ3-6m-6jx" secondAttribute="top" id="RB3-57-ygf"/>
+                        <constraint firstItem="PQR-Y9-P49" firstAttribute="leading" secondItem="IJ3-6m-6jx" secondAttribute="leading" id="ew6-qd-B3q"/>
+                        <constraint firstAttribute="trailing" secondItem="PQR-Y9-P49" secondAttribute="trailing" id="pOT-v6-UOS"/>
+                        <constraint firstAttribute="trailing" secondItem="KOo-RF-SnH" secondAttribute="trailing" id="thD-as-DsO"/>
+                        <constraint firstItem="hv6-kR-dd0" firstAttribute="leading" secondItem="IJ3-6m-6jx" secondAttribute="leading" constant="13" id="zAY-9O-JA1"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Bfp-57-hwR" appends="YES" id="2Hn-p5-8Ew"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5d-AA-oB0" userLabel="View2">
+                    <rect key="frame" x="0.0" y="151.5" width="489" height="75.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cancel icon" translatesAutoresizingMaskIntoConstraints="NO" id="nEe-oS-7lW">
+                            <rect key="frame" x="13" y="30.5" width="17" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="6yM-HO-kpd"/>
+                                <constraint firstAttribute="height" constant="14" id="mjm-g0-kWo"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="vhQ-Qp-Ai3" userLabel="Image View2">
+                            <rect key="frame" x="0.0" y="0.0" width="489" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="sNk-zb-V0V"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEj-Gu-fU4">
+                            <rect key="frame" x="43" y="1" width="446" height="74.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vhQ-Qp-Ai3" secondAttribute="trailing" id="2CK-se-gcJ"/>
+                        <constraint firstItem="vhQ-Qp-Ai3" firstAttribute="leading" secondItem="V5d-AA-oB0" secondAttribute="leading" id="A1c-QX-ysO"/>
+                        <constraint firstItem="vhQ-Qp-Ai3" firstAttribute="top" secondItem="V5d-AA-oB0" secondAttribute="top" id="FbR-Aa-tkS"/>
+                        <constraint firstItem="ZEj-Gu-fU4" firstAttribute="leading" secondItem="nEe-oS-7lW" secondAttribute="trailing" constant="13" id="I3F-kv-FBY"/>
+                        <constraint firstItem="ZEj-Gu-fU4" firstAttribute="top" secondItem="vhQ-Qp-Ai3" secondAttribute="bottom" id="NJh-OL-Ue7"/>
+                        <constraint firstAttribute="bottom" secondItem="ZEj-Gu-fU4" secondAttribute="bottom" id="clR-aW-rS0"/>
+                        <constraint firstItem="nEe-oS-7lW" firstAttribute="leading" secondItem="V5d-AA-oB0" secondAttribute="leading" constant="13" id="hGn-xh-DDf"/>
+                        <constraint firstItem="nEe-oS-7lW" firstAttribute="centerY" secondItem="V5d-AA-oB0" secondAttribute="centerY" id="hdN-jU-5aB"/>
+                        <constraint firstAttribute="trailing" secondItem="ZEj-Gu-fU4" secondAttribute="trailing" id="rFw-J1-RG3"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="B1m-Ph-d3g" appends="YES" id="vIo-Tr-xJ4"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ki-XS-OVp" userLabel="View1-5">
+                    <rect key="frame" x="0.0" y="75.5" width="489" height="76"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Take a photo icon" translatesAutoresizingMaskIntoConstraints="NO" id="Hgi-1M-9Ys">
+                            <rect key="frame" x="13" y="30.5" width="17" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="egg-nM-qU2"/>
+                                <constraint firstAttribute="width" constant="17" id="vfK-r1-rig"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a photo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVi-7x-U4r">
+                            <rect key="frame" x="43" y="0.0" width="446" height="76"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="Hgi-1M-9Ys" firstAttribute="leading" secondItem="4ki-XS-OVp" secondAttribute="leading" constant="13" id="7aB-xo-rIv"/>
+                        <constraint firstAttribute="bottom" secondItem="dVi-7x-U4r" secondAttribute="bottom" id="9QU-BH-6it"/>
+                        <constraint firstAttribute="trailing" secondItem="dVi-7x-U4r" secondAttribute="trailing" id="JFv-Li-BgH"/>
+                        <constraint firstItem="dVi-7x-U4r" firstAttribute="leading" secondItem="Hgi-1M-9Ys" secondAttribute="trailing" constant="13" id="WmI-8r-TpP"/>
+                        <constraint firstItem="dVi-7x-U4r" firstAttribute="top" secondItem="4ki-XS-OVp" secondAttribute="top" id="cm4-10-WGE"/>
+                        <constraint firstItem="Hgi-1M-9Ys" firstAttribute="centerY" secondItem="4ki-XS-OVp" secondAttribute="centerY" id="zVc-sh-Sqx"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="nnR-Aq-0HB" appends="YES" id="wof-Kc-umR"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.26666666666666666" green="0.2627450980392157" blue="0.28235294117647058" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4ki-XS-OVp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Vo-xM-x3y"/>
+                <constraint firstAttribute="bottom" secondItem="V5d-AA-oB0" secondAttribute="bottom" id="Dod-8K-uuo"/>
+                <constraint firstItem="IJ3-6m-6jx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FO8-rg-12B"/>
+                <constraint firstAttribute="trailing" secondItem="4ki-XS-OVp" secondAttribute="trailing" id="Jo8-jS-oJW"/>
+                <constraint firstItem="V5d-AA-oB0" firstAttribute="top" secondItem="4ki-XS-OVp" secondAttribute="bottom" id="On3-a2-UQU"/>
+                <constraint firstItem="4ki-XS-OVp" firstAttribute="top" secondItem="IJ3-6m-6jx" secondAttribute="bottom" id="WZb-9C-RBa"/>
+                <constraint firstItem="V5d-AA-oB0" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.33333" id="XWB-HN-oAT"/>
+                <constraint firstItem="IJ3-6m-6jx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cc5-cG-q53"/>
+                <constraint firstAttribute="trailing" secondItem="V5d-AA-oB0" secondAttribute="trailing" id="fzD-0Y-4ZZ"/>
+                <constraint firstItem="V5d-AA-oB0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h7j-9F-bO0"/>
+                <constraint firstItem="IJ3-6m-6jx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.333333" id="j8G-G7-msD"/>
+                <constraint firstAttribute="trailing" secondItem="IJ3-6m-6jx" secondAttribute="trailing" id="teg-G9-y5H"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="camerLabel" destination="dVi-7x-U4r" id="BUA-ba-dpH"/>
+                <outlet property="cancelLabel" destination="ZEj-Gu-fU4" id="cZ5-3b-R7L"/>
+                <outlet property="photoLabel" destination="KOo-RF-SnH" id="XNq-gN-LaI"/>
+            </connections>
+            <point key="canvasLocation" x="-6.5" y="-40.5"/>
+        </view>
+        <tapGestureRecognizer id="Bfp-57-hwR">
+            <connections>
+                <action selector="clickAlbum:" destination="iN0-l3-epB" id="JVE-jp-QtO"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="nnR-Aq-0HB">
+            <connections>
+                <action selector="clickTakePhoto:" destination="iN0-l3-epB" id="Wwe-mp-oXO"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="B1m-Ph-d3g">
+            <connections>
+                <action selector="clickCancel:" destination="iN0-l3-epB" id="cNP-iL-E2p"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Cancel icon" width="17" height="14"/>
+        <image name="Choose from Gallery  icon" width="17" height="14"/>
+        <image name="Login_line" width="726" height="2"/>
+        <image name="Take a photo icon" width="17" height="14"/>
+    </resources>
+</document>

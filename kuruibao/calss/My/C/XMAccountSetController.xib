@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMAccountSetController">
+            <connections>
+                <outlet property="phoneLabel" destination="Dr8-BI-lld" id="YYa-oH-wDJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kv-hb-hTC" userLabel="View1">
+                    <rect key="frame" x="0.0" y="185" width="375" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Your smart phone icon" translatesAutoresizingMaskIntoConstraints="NO" id="vEM-R8-V8s">
+                            <rect key="frame" x="15" y="15" width="17" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="WuU-VZ-XBO"/>
+                                <constraint firstAttribute="width" constant="17" id="dNu-Z9-kIe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="21" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your smartphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmI-lP-W1G">
+                            <rect key="frame" x="45" y="0.0" width="200" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="ROV-a6-4Cf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="stN-Pd-FHj">
+                            <rect key="frame" x="0.0" y="43" width="375" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="NCC-QT-hWH"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="****" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr8-BI-lld">
+                            <rect key="frame" x="205" y="0.0" width="150" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="GNd-kM-hiN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1JC-2g-8r1"/>
+                        <constraint firstAttribute="bottom" secondItem="JmI-lP-W1G" secondAttribute="bottom" id="3Fs-KE-zU6"/>
+                        <constraint firstAttribute="trailing" secondItem="stN-Pd-FHj" secondAttribute="trailing" id="HG4-e1-rau"/>
+                        <constraint firstItem="JmI-lP-W1G" firstAttribute="top" secondItem="8Kv-hb-hTC" secondAttribute="top" id="IBw-FW-yqo"/>
+                        <constraint firstItem="stN-Pd-FHj" firstAttribute="leading" secondItem="8Kv-hb-hTC" secondAttribute="leading" id="ZNJ-Ed-DMB"/>
+                        <constraint firstAttribute="bottom" secondItem="stN-Pd-FHj" secondAttribute="bottom" id="ZRG-Sd-0Tn"/>
+                        <constraint firstItem="vEM-R8-V8s" firstAttribute="centerY" secondItem="8Kv-hb-hTC" secondAttribute="centerY" id="arH-eW-ORi"/>
+                        <constraint firstItem="vEM-R8-V8s" firstAttribute="leading" secondItem="8Kv-hb-hTC" secondAttribute="leading" constant="15" id="avK-03-Fo3"/>
+                        <constraint firstItem="Dr8-BI-lld" firstAttribute="top" secondItem="8Kv-hb-hTC" secondAttribute="top" id="caR-Z2-a7E"/>
+                        <constraint firstItem="JmI-lP-W1G" firstAttribute="leading" secondItem="vEM-R8-V8s" secondAttribute="trailing" constant="13" id="oD0-y0-OCr"/>
+                        <constraint firstItem="stN-Pd-FHj" firstAttribute="top" secondItem="Dr8-BI-lld" secondAttribute="bottom" id="rUy-Xj-rd9"/>
+                        <constraint firstAttribute="trailing" secondItem="Dr8-BI-lld" secondAttribute="trailing" constant="20" id="xrO-q7-AQB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3os-fc-Wmg" userLabel="View2">
+                    <rect key="frame" x="0.0" y="229" width="375" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="S6P-Mo-Nke">
+                            <rect key="frame" x="343" y="13" width="12" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="ZqB-4h-HNz"/>
+                                <constraint firstAttribute="height" constant="17" id="cYP-jk-jwJ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Change password icon" translatesAutoresizingMaskIntoConstraints="NO" id="lcV-S2-QAD">
+                            <rect key="frame" x="15" y="15" width="17" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="17" id="RHu-Eq-Cyx"/>
+                                <constraint firstAttribute="height" constant="14" id="Zh5-mf-Pjg"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="22" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDe-4o-A6d">
+                            <rect key="frame" x="45" y="0.0" width="200" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="pJB-oZ-irt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HDe-4o-A6d" secondAttribute="bottom" id="0P3-B9-m5t"/>
+                        <constraint firstItem="HDe-4o-A6d" firstAttribute="top" secondItem="3os-fc-Wmg" secondAttribute="top" id="Idi-9t-mrW"/>
+                        <constraint firstItem="HDe-4o-A6d" firstAttribute="leading" secondItem="lcV-S2-QAD" secondAttribute="trailing" constant="13" id="JC6-GS-0iw"/>
+                        <constraint firstAttribute="height" constant="44" id="Ryq-g3-lhQ"/>
+                        <constraint firstItem="S6P-Mo-Nke" firstAttribute="centerY" secondItem="3os-fc-Wmg" secondAttribute="centerY" id="Skx-hU-Dhr"/>
+                        <constraint firstItem="lcV-S2-QAD" firstAttribute="leading" secondItem="3os-fc-Wmg" secondAttribute="leading" constant="15" id="UxI-XG-9J8"/>
+                        <constraint firstItem="lcV-S2-QAD" firstAttribute="centerY" secondItem="3os-fc-Wmg" secondAttribute="centerY" id="WJa-gV-rVB"/>
+                        <constraint firstAttribute="trailing" secondItem="S6P-Mo-Nke" secondAttribute="trailing" constant="20" id="faO-lD-iWQ"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="emD-Qd-Hzg" appends="YES" id="PGl-68-N0t"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3os-fc-Wmg" firstAttribute="top" secondItem="8Kv-hb-hTC" secondAttribute="bottom" id="5RW-wJ-MNM"/>
+                <constraint firstAttribute="trailing" secondItem="3os-fc-Wmg" secondAttribute="trailing" id="RTT-oB-dgg"/>
+                <constraint firstItem="3os-fc-Wmg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WeF-0w-DMr"/>
+                <constraint firstItem="8Kv-hb-hTC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="185" id="Xvy-yO-HJH"/>
+                <constraint firstAttribute="trailing" secondItem="8Kv-hb-hTC" secondAttribute="trailing" id="nKs-rs-XDL"/>
+                <constraint firstItem="8Kv-hb-hTC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tHX-L5-MzR"/>
+            </constraints>
+            <point key="canvasLocation" x="41.5" y="54.5"/>
+        </view>
+        <tapGestureRecognizer id="emD-Qd-Hzg">
+            <connections>
+                <action selector="clickChangePwd:" destination="-1" id="8Xi-Qo-8KN"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Change password icon" width="17" height="14"/>
+        <image name="Login_line" width="726" height="2"/>
+        <image name="Your smart phone icon" width="17" height="14"/>
+        <image name="next" width="12" height="18"/>
+    </resources>
+</document>

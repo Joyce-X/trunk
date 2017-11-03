@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "707fcfda-0d97-4831-882d-8b998d790aac",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "707fcfda-0d97-4831-882d-8b998d790aac" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "707fcfda-0d97-4831-882d-8b998d790aac" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "496057CF-3E3B-4C0A-B87C-C9B9E84D943A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "707fcfda-0d97-4831-882d-8b998d790aac" : "kuruibao_US\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "kuruibao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/kuruibao.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/kuruibao_US",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "707fcfda-0d97-4831-882d-8b998d790aac"
+    }
+  ]
+}

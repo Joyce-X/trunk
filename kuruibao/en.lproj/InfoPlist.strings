@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  kuruibao
+
+  Created by x on 17/9/5.
+  Copyright © 2017年 ChexXiaoMi. All rights reserved.
+*/
+
+//设置英文环境下显示的APP名称
+CFBundleDisplayName = "DashPal";

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMControlAnimateView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1R-cV-qTC">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="ccS-DB-ETR"/>
+                    </constraints>
+                    <state key="normal" image="play"/>
+                    <state key="selected" image="stop"/>
+                    <connections>
+                        <action selector="cliclkPlayBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pdc-gj-5QX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ek5-UC-vbG">
+                    <rect key="frame" x="335" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Ykm-8q-Cjv"/>
+                        <constraint firstAttribute="height" constant="40" id="ffU-Fx-uux"/>
+                    </constraints>
+                    <state key="normal" image="full screen icon"/>
+                    <connections>
+                        <action selector="clickBackBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="M6Y-Qm-Apg"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pfN-Py-vMA">
+                    <rect key="frame" x="48" y="5" width="279" height="31"/>
+                    <color key="minimumTrackTintColor" red="0.49803921568627452" green="0.49803921568627452" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="touchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="YX6-Jd-yqP"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pfN-Py-vMA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5qs-R0-SLp"/>
+                <constraint firstItem="ek5-UC-vbG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5xd-it-4Q7"/>
+                <constraint firstItem="l1R-cV-qTC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NB0-QQ-fiv"/>
+                <constraint firstAttribute="trailing" secondItem="ek5-UC-vbG" secondAttribute="trailing" id="Pk9-Sd-3oC"/>
+                <constraint firstItem="ek5-UC-vbG" firstAttribute="leading" secondItem="pfN-Py-vMA" secondAttribute="trailing" constant="10" id="cxE-Rx-m1d"/>
+                <constraint firstItem="l1R-cV-qTC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gA4-Wq-BCw"/>
+                <constraint firstItem="l1R-cV-qTC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uIW-os-efz"/>
+                <constraint firstItem="pfN-Py-vMA" firstAttribute="leading" secondItem="l1R-cV-qTC" secondAttribute="trailing" constant="10" id="vPh-J0-vgV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playBtn" destination="l1R-cV-qTC" id="Dsn-dQ-Aau"/>
+                <outlet property="slider" destination="pfN-Py-vMA" id="XEM-4K-YVw"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="full screen icon" width="40" height="40"/>
+        <image name="play" width="40" height="40"/>
+        <image name="stop" width="40" height="40"/>
+    </resources>
+</document>

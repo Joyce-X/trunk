@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="406"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="S5q-IF-sGB" userLabel="pwd_line">
+                    <rect key="frame" x="0.0" y="135" width="330" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mDF-z0-l5Z"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="ml5-nZ-zrF" userLabel="Phone_line">
+                    <rect key="frame" x="0.0" y="74" width="330" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="zA9-Ae-Flm"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone no." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-ve-eiK" customClass="XMCustomTextField">
+                    <rect key="frame" x="55" y="43" width="250" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="pw7-5U-1rz"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="c0A-l0-TT6" customClass="XMCustomTextField">
+                    <rect key="frame" x="55" y="102" width="144" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="Cpc-AR-SFx"/>
+                    </constraints>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKS-71-4SX">
+                    <rect key="frame" x="212" y="107" width="105" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="A8H-33-dxZ"/>
+                        <constraint firstAttribute="width" constant="105" id="Zvu-QS-AXK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="6"/>
+                    <state key="normal" title="Forget password"/>
+                    <connections>
+                        <action selector="losePwdBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XZR-YS-agi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-HK-c1X">
+                    <rect key="frame" x="22" y="44" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="8YR-rN-yBo"/>
+                        <constraint firstAttribute="width" constant="20" id="LJE-4c-Dg6"/>
+                    </constraints>
+                    <state key="normal" image="Phone NO icon"/>
+                    <state key="selected" image="Phone NO icon F"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJ0-Da-Eff">
+                    <rect key="frame" x="22" y="100" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="P24-wA-5Nl"/>
+                        <constraint firstAttribute="height" constant="22" id="ZFS-av-Ats"/>
+                    </constraints>
+                    <state key="normal" image="password icon"/>
+                    <state key="selected" image="password icon F"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-9U-M9x">
+                    <rect key="frame" x="67" y="296" width="196" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Jb6-P5-IXx"/>
+                        <constraint firstAttribute="width" constant="196" id="oD0-Yc-rkA"/>
+                    </constraints>
+                    <state key="normal" image="Sign In Button F"/>
+                    <state key="disabled" image="Sign In Button"/>
+                    <connections>
+                        <action selector="loginBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z15-Vh-6u4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2U-0a-Ur9">
+                    <rect key="frame" x="76" y="344" width="130" height="42"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="Tfd-Ux-M67"/>
+                        <constraint firstAttribute="width" constant="130" id="oUL-Yf-gUi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal" title="User Protocol"/>
+                    <connections>
+                        <action selector="protocolTitleClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jov-ur-8QE"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEh-VK-FYZ">
+                    <rect key="frame" x="208" y="352" width="27" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="27" id="FfQ-tz-D9X"/>
+                        <constraint firstAttribute="height" constant="27" id="mPX-sc-LtL"/>
+                    </constraints>
+                    <state key="normal" image="userProtocol_selected"/>
+                    <state key="selected" image="userProtocol"/>
+                    <connections>
+                        <action selector="selelctProtocolBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="a73-5G-FS5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ml5-nZ-zrF" secondAttribute="trailing" id="2Ib-56-dUT"/>
+                <constraint firstItem="bJ0-Da-Eff" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="7n7-1P-9nA"/>
+                <constraint firstItem="4Mi-9U-M9x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bz3-5p-o3K"/>
+                <constraint firstItem="ml5-nZ-zrF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Dqj-B5-3fN"/>
+                <constraint firstItem="S5q-IF-sGB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EmG-55-zJv"/>
+                <constraint firstItem="DnO-ve-eiK" firstAttribute="leading" secondItem="k3c-HK-c1X" secondAttribute="trailing" constant="13" id="GSI-hC-USD"/>
+                <constraint firstAttribute="trailing" secondItem="DnO-ve-eiK" secondAttribute="trailing" constant="25" id="JzD-hX-VM3"/>
+                <constraint firstAttribute="trailing" secondItem="S5q-IF-sGB" secondAttribute="trailing" id="Pwg-Hg-Td7"/>
+                <constraint firstItem="S5q-IF-sGB" firstAttribute="top" secondItem="c0A-l0-TT6" secondAttribute="bottom" constant="7" id="SH0-od-80V"/>
+                <constraint firstAttribute="bottom" secondItem="4Mi-9U-M9x" secondAttribute="bottom" constant="58" id="TH5-vK-NwW"/>
+                <constraint firstItem="c0A-l0-TT6" firstAttribute="leading" secondItem="bJ0-Da-Eff" secondAttribute="trailing" constant="13" id="WNz-u3-i7q"/>
+                <constraint firstItem="ml5-nZ-zrF" firstAttribute="top" secondItem="DnO-ve-eiK" secondAttribute="bottom" constant="5" id="Y63-PQ-RF0"/>
+                <constraint firstItem="y2U-0a-Ur9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-24" id="Yjm-PH-NUK"/>
+                <constraint firstItem="S5q-IF-sGB" firstAttribute="top" secondItem="hKS-71-4SX" secondAttribute="bottom" constant="13" id="Zr7-iY-quq"/>
+                <constraint firstItem="pEh-VK-FYZ" firstAttribute="centerY" secondItem="y2U-0a-Ur9" secondAttribute="centerY" id="aBm-FU-PhY"/>
+                <constraint firstAttribute="bottom" secondItem="y2U-0a-Ur9" secondAttribute="bottom" constant="20" id="gpN-Yv-w3p"/>
+                <constraint firstItem="pEh-VK-FYZ" firstAttribute="leading" secondItem="y2U-0a-Ur9" secondAttribute="trailing" constant="2" id="gvQ-5g-eLC"/>
+                <constraint firstItem="ml5-nZ-zrF" firstAttribute="top" secondItem="k3c-HK-c1X" secondAttribute="bottom" constant="8" id="lU6-SC-2pI"/>
+                <constraint firstItem="ml5-nZ-zrF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="74" id="lWF-fR-a1C"/>
+                <constraint firstItem="k3c-HK-c1X" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="oAE-9l-n8C"/>
+                <constraint firstItem="S5q-IF-sGB" firstAttribute="top" secondItem="ml5-nZ-zrF" secondAttribute="bottom" constant="60" id="u1J-UL-PWA"/>
+                <constraint firstItem="hKS-71-4SX" firstAttribute="leading" secondItem="c0A-l0-TT6" secondAttribute="trailing" constant="13" id="vIV-qN-RQX"/>
+                <constraint firstAttribute="trailing" secondItem="hKS-71-4SX" secondAttribute="trailing" constant="13" id="ycd-f5-zkl"/>
+                <constraint firstItem="S5q-IF-sGB" firstAttribute="top" secondItem="bJ0-Da-Eff" secondAttribute="bottom" constant="13" id="yvQ-mW-79q"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="logInBtn" destination="4Mi-9U-M9x" id="rID-zm-vfE"/>
+                <outlet property="phoneBtn" destination="k3c-HK-c1X" id="xsd-u3-RWG"/>
+                <outlet property="phoneTF" destination="DnO-ve-eiK" id="bjr-gn-QX9"/>
+                <outlet property="pwdBtn" destination="bJ0-Da-Eff" id="M2U-V8-d0U"/>
+                <outlet property="pwdTF" destination="c0A-l0-TT6" id="AGo-FK-QTb"/>
+            </connections>
+            <point key="canvasLocation" x="-320" y="-136"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Login_line" width="726" height="2"/>
+        <image name="Phone NO icon" width="20" height="22"/>
+        <image name="Phone NO icon F" width="20" height="22"/>
+        <image name="Sign In Button" width="196" height="54"/>
+        <image name="Sign In Button F" width="196" height="54"/>
+        <image name="password icon" width="20" height="22"/>
+        <image name="password icon F" width="20" height="22"/>
+        <image name="userProtocol" width="16" height="16"/>
+        <image name="userProtocol_selected" width="16" height="16"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

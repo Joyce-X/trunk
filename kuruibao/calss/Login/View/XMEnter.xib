@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dNr-ZI-DuL" customClass="XMEnterPwd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmj-It-rls">
+                    <rect key="frame" x="90" y="290" width="196" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="S3a-Np-Aee"/>
+                        <constraint firstAttribute="width" constant="196" id="eoH-eB-1fk"/>
+                    </constraints>
+                    <state key="normal" image="Confirm Button F"/>
+                    <state key="disabled" image="Confirm Button"/>
+                    <connections>
+                        <action selector="confirmClick:" destination="dNr-ZI-DuL" eventType="touchUpInside" id="7uG-w8-Shc"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="kso-vl-Pud">
+                    <rect key="frame" x="0.0" y="74" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ov4-bi-40O"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvY-AD-4Ic">
+                    <rect key="frame" x="22" y="39" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="9q8-0h-PB6"/>
+                        <constraint firstAttribute="height" constant="22" id="aWu-dF-Mn3"/>
+                    </constraints>
+                    <state key="normal" image="password icon"/>
+                    <state key="selected" image="password icon F"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62S-O5-dTR">
+                    <rect key="frame" x="22" y="100" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="SJj-3f-ono"/>
+                        <constraint firstAttribute="height" constant="22" id="xYB-gZ-9Yk"/>
+                    </constraints>
+                    <state key="normal" image="password icon"/>
+                    <state key="selected" image="password icon F"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4K-q2-Xx3" customClass="XMCustomTextField">
+                    <rect key="frame" x="60" y="36" width="255" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="I1o-6U-DE2"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login_line" translatesAutoresizingMaskIntoConstraints="NO" id="ifK-he-xIH" userLabel="Login_line_B">
+                    <rect key="frame" x="0.0" y="135" width="375" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="LKn-xJ-Wf4"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Retype" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MO9-co-rET" customClass="XMCustomTextField">
+                    <rect key="frame" x="60" y="97" width="215" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="R2B-Q3-pD1"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Tmj-It-rls" secondAttribute="bottom" constant="58" id="9wu-2r-iN1"/>
+                <constraint firstAttribute="trailing" secondItem="ifK-he-xIH" secondAttribute="trailing" id="HsX-5i-SVO"/>
+                <constraint firstItem="Tmj-It-rls" firstAttribute="centerX" secondItem="dNr-ZI-DuL" secondAttribute="centerX" id="KgP-2Q-3Pe"/>
+                <constraint firstItem="kso-vl-Pud" firstAttribute="top" secondItem="dNr-ZI-DuL" secondAttribute="top" constant="74" id="Muu-td-wsB"/>
+                <constraint firstItem="kso-vl-Pud" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" id="P7o-an-lL8"/>
+                <constraint firstItem="M4K-q2-Xx3" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" constant="60" id="T5D-2e-KpJ"/>
+                <constraint firstAttribute="trailing" secondItem="M4K-q2-Xx3" secondAttribute="trailing" constant="60" id="TWK-Yn-HNT"/>
+                <constraint firstItem="kso-vl-Pud" firstAttribute="top" secondItem="OvY-AD-4Ic" secondAttribute="bottom" constant="13" id="aPf-lL-alp"/>
+                <constraint firstAttribute="trailing" secondItem="kso-vl-Pud" secondAttribute="trailing" id="k3m-Hg-hw0"/>
+                <constraint firstAttribute="trailing" secondItem="MO9-co-rET" secondAttribute="trailing" constant="100" id="lF1-qi-Qa4"/>
+                <constraint firstItem="ifK-he-xIH" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" id="ob4-ig-cM0"/>
+                <constraint firstItem="MO9-co-rET" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" constant="60" id="odF-og-wJh"/>
+                <constraint firstItem="ifK-he-xIH" firstAttribute="top" secondItem="MO9-co-rET" secondAttribute="bottom" constant="8" id="pLE-5L-rzJ"/>
+                <constraint firstItem="62S-O5-dTR" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" constant="22" id="q7l-9r-dam"/>
+                <constraint firstItem="ifK-he-xIH" firstAttribute="top" secondItem="62S-O5-dTR" secondAttribute="bottom" constant="13" id="ta5-ai-djk"/>
+                <constraint firstItem="kso-vl-Pud" firstAttribute="top" secondItem="M4K-q2-Xx3" secondAttribute="bottom" constant="8" id="uCx-Ss-lls"/>
+                <constraint firstItem="ifK-he-xIH" firstAttribute="top" secondItem="kso-vl-Pud" secondAttribute="bottom" constant="60" id="xFp-zg-XKf"/>
+                <constraint firstItem="OvY-AD-4Ic" firstAttribute="leading" secondItem="dNr-ZI-DuL" secondAttribute="leading" constant="22" id="xte-NM-NAR"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmBtn" destination="Tmj-It-rls" id="sTa-wN-fXM"/>
+                <outlet property="firstBtn" destination="OvY-AD-4Ic" id="C3d-dW-mCu"/>
+                <outlet property="firstPwdTF" destination="M4K-q2-Xx3" id="fad-d9-95q"/>
+                <outlet property="secondBtn" destination="62S-O5-dTR" id="W3v-rv-28u"/>
+                <outlet property="secondPwdTF" destination="MO9-co-rET" id="wAd-F7-SE0"/>
+            </connections>
+            <point key="canvasLocation" x="-12.5" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Confirm Button" width="196" height="54"/>
+        <image name="Confirm Button F" width="196" height="54"/>
+        <image name="Login_line" width="726" height="2"/>
+        <image name="password icon" width="20" height="22"/>
+        <image name="password icon F" width="20" height="22"/>
+    </resources>
+</document>
